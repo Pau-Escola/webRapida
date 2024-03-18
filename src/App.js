@@ -15,7 +15,7 @@ function App() {
         <NavBar />
         <div>
           <button
-            className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full z-50"
+            className="fixed bottom-4 right-4 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full z-50"
             onClick={() => setIsModalOpen(true)}
           >
             Contact Us

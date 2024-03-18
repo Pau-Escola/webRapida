@@ -17,7 +17,7 @@ function ContactInfoFooter() {
                     <p>Phone: (123) 456-789</p>
                     <p>Email: contact@example.com</p>
                     <button
-                        className="mt-2 right-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        className="mt-2 right-4 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => setIsModalOpen(true)}
                     >
                         Contact Us
