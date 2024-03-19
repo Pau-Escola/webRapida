@@ -2,6 +2,9 @@ import React from 'react';
 import logo from '../images/logo.jpg';
 import iconVenda from '../images/icono-venda.png';
 import iconRepar from '../images/icono-reparacions.png';
+import iconOcasio from '../images/icono-ocasio.png';
+import iconLloguer from '../images/icono-lloguer.png';
+
 
 
 function HomePage() {
@@ -18,40 +21,35 @@ function HomePage() {
             <div className="services-section my-8">
                 <h2 className="text-2xl font-semibold">Our Services</h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
-                    {/* Placeholder for service icons and descriptions */}
-                    <div className="service-item flex justify-center">
-                        <img src={iconVenda} alt="Company Logo" style={{ width: '35px' }} />
+                    <div className="flex flex-col items-center text-center m-3 w-48">
+                        <img src={iconVenda} alt="Company Logo" style={{ width: '100px' }} />
                         <h3 className="mt-2 font-semibold">Venda</h3>
                     </div>
-                    <div className="service-item text-center">
-                        <p>[Service Icon]</p>
+                    <div className="flex flex-col items-center text-center m-3 w-48">
+                        <img src={iconLloguer} alt="Company Logo" style={{ width: '100px' }} />
                         <h3 className="mt-2 font-semibold">Lloguer</h3>
                     </div>
-                    <div className="service-item flex justify-center">
+                    <div className="flex flex-col items-center text-center m-3 w-48r">
                         <p><img src={iconRepar} alt="Company Logo" style={{ width: '100px' }} /></p>
-                        <h3 className="mt-2 font-semibold">Reparacions/Modificacions</h3>
+                        <h3 className="mt-2 font-semibold">Reparacions</h3>
                     </div>
-                    <div className="service-item text-center">
-                        <p>[Service Icon]</p>
-                        <h3 className="mt-2 font-semibold">Venda Ocasio</h3>
-                    </div>
-                    <div className="service-item text-center">
-                        <p>[Service Icon]</p>
-                        <h3 className="mt-2 font-semibold">Productes fets a mida</h3>
+                    <div className="flex flex-col items-center text-center m-3 w-48">
+                        <img src={iconOcasio} alt="Company Logo" style={{ width: '100px' }} />
+                        <h3 className="mt-2 font-semibold">Ocasio</h3>
                     </div>
                 </div>
             </div>
-            <div className="featured-products-section my-8">
+            {/*<div className="featured-products-section my-8">
                 <h2 className="text-2xl font-semibold">Featured Products</h2>
-                {/* Placeholder for product showcase */}
+                {/* Placeholder for product showcase }
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
                     <div className="product-item">
                         <p>[Product Image]</p>
                         <h3 className="mt-2 font-semibold">Container Model 1</h3>
                     </div>
-                    {/* Repeat for other products */}
+                    {/* Repeat for other products }
                 </div>
-            </div>
+            </div>*/}
         </div>
     );
 }
