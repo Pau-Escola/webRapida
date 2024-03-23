@@ -19,7 +19,7 @@ function ContactInfoFooter() {
                         className="mt-2 right-4 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => setIsModalOpen(true)}
                     >
-                        Eniva'ns un missatge
+                        Contacta'ns
                     </button>
                     {isModalOpen && <ContactFormModal onClose={() => setIsModalOpen(false)} />}
                 </div>

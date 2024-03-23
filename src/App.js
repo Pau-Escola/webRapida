@@ -18,7 +18,7 @@ function App() {
             className="fixed bottom-4 right-4 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full z-50"
             onClick={() => setIsModalOpen(true)}
           >
-            Contact Us
+            Contacta'ns
           </button>
           {isModalOpen && <ContactFormModal onClose={() => setIsModalOpen(false)} />}
         </div>
