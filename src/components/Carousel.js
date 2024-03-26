@@ -22,7 +22,7 @@ const Carousel = ({ images }) => {
     return (
 
         <div className="carousel-container relative flex items-center overflow-hidden" style={{ height: '50vh', width: '100%' }} aria-roledescription="carousel" aria-label="Gallery">
-            <div className="carousel-items" aria-live="polite">
+            <div className="carousel-items w-full h-full flex justify-center items-center" aria-live="polite">
                 {images.map((image, index) => (
                     <div
                         key={index}
