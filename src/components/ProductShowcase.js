@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import ProductModal from './ProductModal';
 import caseta1 from '../images/products/caseta-1.jpg';
 import caseta2 from '../images/products/caseta-2.jpg';
 import caseta3 from '../images/products/caseta-3.JPG';
@@ -44,12 +45,24 @@ const products = [
     },
 ]
 function ProductShowcase() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentProduct, setCurrentProduct] = useState(null);
+
+    const openModal = (product) => {
+        setCurrentProduct(product);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setCurrentProduct(null);
+    };
     return (
         <div className="py-8">
             <h2 className="text-3xl text-center font-bold mb-8">Product Showcase</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 container mx-auto">
                 {products.map((product) => (
-                    <div key={product.id} className="max-w-sm rounded overflow-hidden shadow-lg">
+                    <div key={product.id} className="max-w-sm rounded overflow-hidden shadow-lg cursor-pointer" onClick={() => openModal(product)}>
                         <img className="w-full h-40 object-cover" src={product.imageUrl} alt={product.name} />
                         <div className="px-6 py-4">
                             <div className="font-bold text-xl mb-2">{product.name}</div>
@@ -63,6 +76,7 @@ function ProductShowcase() {
                     </div>
                 ))}
             </div>
+            {isModalOpen && <ProductModal product={currentProduct} onClose={closeModal} />}
         </div>
     );
 }
