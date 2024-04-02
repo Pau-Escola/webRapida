@@ -32,7 +32,7 @@ function HomePage() {
                 {isModalOpen && <ContactFormModal onClose={() => setIsModalOpen(false)} />}
             </div>
             <div>
-                <Carousel images={[falsaU, falsaD, falsaT, iconLloguer, iconRepar]} />
+                <Carousel images={[falsaU, falsaD, falsaT, iconLloguer, iconRepar]} size="h-[75vh]" />
             </div>
             <div className="services-section my-8">
                 <h2 className="text-2xl font-semibold">Our Services</h2>

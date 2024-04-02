@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 // Then use <FaArrowLeft /> and <FaArrowRight /> in place of custom SVGs
 
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, size }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrevious = () => {
@@ -21,33 +21,31 @@ const Carousel = ({ images }) => {
 
     return (
 
-        <div className="carousel-container relative flex items-center overflow-hidden" style={{ height: '50vh', width: '100%' }} aria-roledescription="carousel" aria-label="Gallery">
-            <div className="carousel-items w-full h-full flex justify-center items-center" aria-live="polite">
+        <div className={`carousel-container relative flex items-center overflow-hidden ${size}`} aria-roledescription="carousel" aria-label="Gallery">
+            <div className="carousel-items w-full h-full flex justify-center items-center w-full h-full" aria-live="polite">
                 {images.map((image, index) => (
                     <div
                         key={index}
                         className={`${index === currentIndex ? 'flex' : 'hidden'} justify-center items-center w-full h-full`}
                         aria-hidden={index !== currentIndex}
                     >
-                        <img src={image} alt='Description generic' className="object-contain mx-auto" />
+                        <img src={image} alt='Description generic' className="object-contain mx-auto w-full h-full" />
                     </div>
                 ))}
             </div>
 
             <button
                 onClick={goToPrevious}
-                className="absolute left-0 h-full flex items-center justify-center hover:bg-primary z-10"
+                className="absolute left-0 h-full flex items-center justify-center hover:bg-primary z-10  cursor-pointer"
                 aria-label="Previous slide"
-                style={{ width: '50px' }}
             >
                 <FaArrowLeft className="w-6 h-6 text-secondary" />
             </button>
 
             <button
                 onClick={goToNext}
-                className="absolute right-0 h-full flex items-center justify-center hover:bg-primary z-10"
+                className="absolute right-0 h-full flex items-center justify-center hover:bg-primary z-10  cursor-pointer"
                 aria-label="Next slide"
-                style={{ width: '50px' }}
             >
                 <FaArrowRight className="w-6 h-6 text-secondary" />
             </button>
