@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 // Then use <FaArrowLeft /> and <FaArrowRight /> in place of custom SVGs
 
 
-const Carousel = ({ images, size }) => {
+const Carousel = ({ images, size, objectFit }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const goToPrevious = () => {
@@ -29,7 +29,7 @@ const Carousel = ({ images, size }) => {
                         className={`${index === currentIndex ? 'flex' : 'hidden'} justify-center items-center w-full h-full`}
                         aria-hidden={index !== currentIndex}
                     >
-                        <img src={image} alt='Description generic' className="object-contain mx-auto w-full h-full" />
+                        <img src={image} alt='Description generic' className={`${objectFit} mx-auto w-full h-full`} />
                     </div>
                 ))}
             </div>

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import AboutUs from './components/AboutUs';
-import ProductShowcase from './components/ProductShowcase';
 import ContactFormModal from './components/ContactFormModal';
 import NavBar from './components/NavBar';
 import ContactInfoFooter from './components/ContactInfoFooter';
@@ -24,8 +22,6 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/products" element={<ProductShowcase />} />
         </Routes>
         <ContactInfoFooter />
       </div>
