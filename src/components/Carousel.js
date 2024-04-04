@@ -66,7 +66,7 @@ const Carousel = ({ images, size, objectFit }) => {
 
             <button
                 onClick={goToPrevious}
-                className="absolute left-0 h-full flex items-center justify-center hover:bg-primary z-10 cursor-pointer"
+                className="absolute top-5 sm:top-1/2 transform -translate-y-1/2 left-0 h-full flex items-center justify-center z-10 cursor-pointer"
                 aria-label="Previous slide"
             >
                 <FaArrowLeft className="w-6 h-6 text-secondary" />
@@ -74,7 +74,7 @@ const Carousel = ({ images, size, objectFit }) => {
 
             <button
                 onClick={goToNext}
-                className="absolute right-0 h-full flex items-center justify-center hover:bg-primary z-10 cursor-pointer"
+                className="absolute top-5 sm:top-1/2 transform -translate-y-1/2 right-0 h-full flex items-center justify-center z-10 cursor-pointer"
                 aria-label="Next slide"
             >
                 <FaArrowRight className="w-6 h-6 text-secondary" />

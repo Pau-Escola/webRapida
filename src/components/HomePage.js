@@ -18,7 +18,7 @@ function HomePage() {
                             <div className="flex justify-center">
                                 <img src={falsaD} alt="Service 1" className="w-full " />
                             </div>
-                            <h3 className="text-2xl font-semibold mt-4">Venda</h3>
+                            <h3 className="text-2xl font-semibold mt-4">Contenidors</h3>
                             <p className="mt-2 text-lg">Si el que necessites és adquirir un contenidor o mòdul t'ajudarem a trobar el que necessites i sino te'l farem a mida</p>
 
                         </div>
@@ -27,7 +27,7 @@ function HomePage() {
                             <div className="flex justify-center">
                                 <img src={falsaD} alt="Service 1" className="w-full" />
                             </div>
-                            <h3 className="text-2xl font-semibold mt-4">Lloguer</h3>
+                            <h3 className="text-2xl font-semibold mt-4">Moduls</h3>
                             <p className="mt-2 text-lg">Si el que necessites és una solució temporal que s'adapti i estigui disponible en poc temps, t'ho durem on calgui</p>
                         </div>
 
