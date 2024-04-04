@@ -1,11 +1,35 @@
 import React, { useState } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-// Then use <FaArrowLeft /> and <FaArrowRight /> in place of custom SVGs
-
-
 const Carousel = ({ images, size, objectFit }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [touchStart, setTouchStart] = useState(null);
+    const [touchEnd, setTouchEnd] = useState(null);
+
+    // Threshold for swipe action
+    const minSwipeDistance = 50;
+
+    const handleTouchStart = (e) => {
+        setTouchEnd(null); // Reset touch end to null on new touch start
+        setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchMove = (e) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+        if (!touchStart || !touchEnd) return;
+        const distance = touchStart - touchEnd;
+        const isSwipeLeft = distance > minSwipeDistance;
+        const isSwipeRight = distance < -minSwipeDistance;
+
+        if (isSwipeLeft) {
+            goToNext();
+        } else if (isSwipeRight) {
+            goToPrevious();
+        }
+    };
 
     const goToPrevious = () => {
         setCurrentIndex((prevIndex) =>
@@ -20,23 +44,29 @@ const Carousel = ({ images, size, objectFit }) => {
     };
 
     return (
-
-        <div className={`carousel-container relative flex items-center overflow-hidden ${size}`} aria-roledescription="carousel" aria-label="Gallery">
-            <div className="carousel-items w-full h-full flex justify-center items-center w-full h-full" aria-live="polite">
+        <div
+            className={`carousel-container relative flex items-center overflow-hidden ${size}`}
+            aria-roledescription="carousel"
+            aria-label="Gallery"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+        >
+            <div className="carousel-items w-full h-full flex justify-center items-center" aria-live="polite">
                 {images.map((image, index) => (
                     <div
                         key={index}
                         className={`${index === currentIndex ? 'flex' : 'hidden'} justify-center items-center w-full h-full`}
                         aria-hidden={index !== currentIndex}
                     >
-                        <img src={image} alt='Description generic' className={`${objectFit} mx-auto w-full h-full`} />
+                        <img src={image} alt="Description generic" className={`${objectFit} mx-auto w-full h-full`} />
                     </div>
                 ))}
             </div>
 
             <button
                 onClick={goToPrevious}
-                className="absolute left-0 h-full flex items-center justify-center hover:bg-primary z-10  cursor-pointer"
+                className="absolute left-0 h-full flex items-center justify-center hover:bg-primary z-10 cursor-pointer"
                 aria-label="Previous slide"
             >
                 <FaArrowLeft className="w-6 h-6 text-secondary" />
@@ -44,7 +74,7 @@ const Carousel = ({ images, size, objectFit }) => {
 
             <button
                 onClick={goToNext}
-                className="absolute right-0 h-full flex items-center justify-center hover:bg-primary z-10  cursor-pointer"
+                className="absolute right-0 h-full flex items-center justify-center hover:bg-primary z-10 cursor-pointer"
                 aria-label="Next slide"
             >
                 <FaArrowRight className="w-6 h-6 text-secondary" />
