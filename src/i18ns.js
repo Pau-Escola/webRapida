@@ -8,8 +8,9 @@ const resources = {
     en: {
         translation: {
             "Welcome to SIM": "Welcome to SIM",
-            "Hero Text": "An experience of 20 years specializing in all types of prefabricated solutions: temporary or permanent, for rent or sale, new or second-hand, makes <strong>SIM GROUP</strong> an answer in mobile construction and modular building. A global service, where the possibility of maintenance, transformation, or relocation of any prefabricated property is included. At SIM, we advise you or develop products tailored to your needs.",
+            "Hero Text": "An experience of 20 years specializing in all types of prefabricated solutions: temporary or permanent, for <strong>rent</strong> or <strong>sale</strong>, <strong>new</strong> or <strong>second-hand</strong>, makes <strong>SIM GROUP</strong> an answer in mobile construction and <strong>modular building</strong>. A global service, where the possibility of <strong>maintenance</strong>, <strong>transformation</strong>, or <strong>relocation</strong> of any prefabricated property is included. At SIM, we advise you or develop products tailored to your needs.",
             "Our services": "Our services",
+            "Our products": "Our products",
             "Contact us": "Contact us",
             "Ask for quote": "Ask for quote",
             "Container": "Containers",
@@ -47,8 +48,9 @@ const resources = {
     es: {
         translation: {
             "Welcome to SIM": "Benvenido a SIM",
-            "Hero Text": "Una experiencia de 20 años de especialización en todo tipo de soluciones prefabricadas: temporales o definitivas, en alquiler o venta, nuevas o de ocasión, hacen del <strong>GRUPO SIM</strong> una respuesta en la construcción móvil y edificación modular. Un servicio global, donde se incluye la posibilidad del servicio de mantenimiento, transformación o traslado de cualquier prefabricado de su propiedad. En SIM le asesoramos o desarrollamos productos a medida de sus necesidades",
+            "Hero Text": "Una experiencia de 20 años de especialización en todo tipo de soluciones prefabricadas: temporales o definitivas, en <strong>alquiler</strong> o <strong>venta</strong>, <strong>nuevas</strong> o de <strong>ocasión</strong>, hacen del <strong>GRUPO SIM</strong> una respuesta en la construcción móvil y <strong>edificación modular</strong>. Un servicio global, donde se incluye la posibilidad del servicio de <strong>mantenimiento</strong>, <strong>transformación</strong> o <strong>traslado</strong> de cualquier prefabricado de su propiedad. En SIM le asesoramos o desarrollamos productos a medida de sus necesidades",
             "Our services": "Nuestros servicios",
+            "Our products": "Nuestros productos",
             "Contact us": "Contáctanos",
             "Ask for quote": "Pedir presupuesto",
             "Container": "Contenedores",
@@ -74,9 +76,9 @@ const resources = {
             "Name": "Nombre",
             "Name PlaceHolder": "Tu nombre o el de tu empresa",
             "Phone PlaceHolder": "Teléfono de contacto",
-            "Email PlaceHolder": "Corro para comunicarnos",
+            "Email PlaceHolder": "Correo para comunicarnos",
             "Message": "Mensaje",
-            "Message PlaceHolder": "Escrivenos tu consulta aquí",
+            "Message PlaceHolder": "Escrívenos tu consulta aquí",
             "Send": "Enviar",
             "Sent Success": "Mensaje enviado correctamente",
             "Sent Failure": "No se ha podido enviar tu mensaje, escrívenos a comercial@simreus.com o llámanos al 977 344 711"
@@ -86,8 +88,9 @@ const resources = {
     ca: {
         translation: {
             "Welcome to SIM": "Benvingut a SIM",
-            "Hero Text": "Una experiència de 20 anys d'especialització en tot tipus de solucions prefabricades: temporals o definitives, en lloguer o venda, noves o d'ocasió, fan del <strong>GRUP SIM</strong> una resposta en la construcció mòbil i edificació modular. Un servei global, on s'inclou la possibilitat del servei de manteniment, transformació o trasllat de qualsevol prefabricat de la seva propietat. A SIM li assessorem o desenvolupem productes a mida de les seves necessitats.",
+            "Hero Text": "Una experiència de 20 anys d'especialització en tot tipus de solucions prefabricades: temporals o definitives, en <strong>lloguer</strong> o <strong>venda</strong>, <strong>noves</strong> o d'<strong>ocasió</strong>, fan del <strong>GRUP SIM</strong> una resposta en la construcció mòbil i <strong>edificació modular</strong>. Un servei global, on s'inclou la possibilitat del servei de <strong>manteniment</strong>, <strong>transformació</strong> o <strong>trasllat</strong> de qualsevol prefabricat de la seva propietat. A SIM li assessorem o desenvolupem productes a mida de les seves necessitats.",
             "Our services": "Els nostres serveis",
+            "Our products": "Els nostres productes",
             "Contact us": "Contacta'ns",
             "Ask for quote": "Demanar pressupost",
             "Container": "Contenidor",
