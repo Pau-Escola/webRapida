@@ -4,8 +4,10 @@ import HomePage from './components/HomePage';
 import ContactFormModal from './components/ContactFormModal';
 import NavBar from './components/NavBar';
 import ContactInfoFooter from './components/ContactInfoFooter';
+import { useTranslation } from 'react-i18next';
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <Router>
@@ -16,7 +18,7 @@ function App() {
             className="fixed bottom-4 right-4 bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full z-50"
             onClick={() => setIsModalOpen(true)}
           >
-            Contacta'ns
+            {t('Contact us')}
           </button>
           {isModalOpen && <ContactFormModal onClose={() => setIsModalOpen(false)} />}
         </div>

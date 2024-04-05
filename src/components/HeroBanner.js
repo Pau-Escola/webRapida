@@ -20,7 +20,7 @@ function HeroBanner() {
                     className="mt-8 md:mt-12 lg:mt-16 text-lg md:text-xl lg:text-2xl bg-primary hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-full z-40"
                     onClick={() => setIsModalOpen(true)}
                 >
-                    Demanar pressupost
+                    {t('Ask for quote')}
                 </button>
                 {isModalOpen && <ContactFormModal onClose={() => setIsModalOpen(false)} />}
             </div>
