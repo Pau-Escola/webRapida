@@ -41,7 +41,9 @@ const resources = {
             "Message PlaceHolder": "Ask for what you need here",
             "Send": "Send",
             "Sent Success": "Message correctly sent",
-            "Sent Failure": "Unable to send message, contact us through comercial@simreus.com or call us 977 344 711"
+            "Sent Failure": "Unable to send message, contact us through comercial@simreus.com or call us 977 344 711",
+            "Modular Building": "Modular Building",
+            "Modular Building Text": "If what you need is to acquire a container or module, we will help you find what you need, and if not, we will make it custom for you."
 
         },
     },
@@ -81,7 +83,9 @@ const resources = {
             "Message PlaceHolder": "Escrívenos tu consulta aquí",
             "Send": "Enviar",
             "Sent Success": "Mensaje enviado correctamente",
-            "Sent Failure": "No se ha podido enviar tu mensaje, escrívenos a comercial@simreus.com o llámanos al 977 344 711"
+            "Sent Failure": "No se ha podido enviar tu mensaje, escrívenos a comercial@simreus.com o llámanos al 977 344 711",
+            "Modular Building": "Construcción Modular",
+            "Modular Building Text": "Tantos años dedicados al sector nos permiten arreglar o modificar cualquier cosa relacionada con módulos."
 
         },
     },
@@ -121,7 +125,9 @@ const resources = {
             "Message PlaceHolder": "Escriu-nos la teva consulta aquí",
             "Send": "Enviar",
             "Sent Success": "Missatge enviat correctament",
-            "Sent Failure": "No s'ha pogut enviar el teu missatge, escriu-nos a comercial@simreus.com o truca'ns al 977 344 711"
+            "Sent Failure": "No s'ha pogut enviar el teu missatge, escriu-nos a comercial@simreus.com o truca'ns al 977 344 711",
+            "Modular Building": "Contrucció Modular",
+            "Modular Building Text": "Si el que necessites és adquirir un contenidor o mòdul t'ajudarem a trobar el que necessites i sino te'l farem a mida"
             // Add other keys and translations
         },
     }

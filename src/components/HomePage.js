@@ -1,5 +1,9 @@
 import React from 'react';
 import falsaD from '../images/falses/falsa-2.jpg';
+import edificiModular from '../images/products/edifici-despres.jpg';
+import casetaJetSKi from '../images/products/jetSkiCaseta.jpg';
+import cotenidorNou from '../images/products/IMG_20210318_140856_1.jpg';
+import modulVidre from '../images/products/IMG_20201217_123553 1.jpg';
 import rentIcon from '../images/icono-lloguer.png';
 import buyIcon from '../images/icono-venda.png';
 import repairIcon from '../images/icono-reparacions.png';
@@ -62,11 +66,11 @@ function HomePage() {
 
                 <div className="services-section my-8">
                     <h2 className="text-2xl font-semibold mb-6">{t('Our products')}</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
 
                         <div className="service-item bg-white shadow-xl rounded-lg p-8 border border-gray-200">
                             <div className="flex justify-center">
-                                <img src={falsaD} alt="Service 1" className="w-full " />
+                                <img src={cotenidorNou} alt="Service 1" className="w-full " />
                             </div>
                             <h3 className="text-2xl font-semibold mt-4">{t('Container')}</h3>
                             <p className="mt-2 text-lg">{t('Container Text')}</p>
@@ -75,7 +79,7 @@ function HomePage() {
 
                         <div className="service-item bg-white shadow-xl rounded-lg p-8 border border-gray-200">
                             <div className="flex justify-center">
-                                <img src={falsaD} alt="Service 1" className="w-full" />
+                                <img src={modulVidre} alt="Service 1" className="w-full" />
                             </div>
                             <h3 className="text-2xl font-semibold mt-4">{t('Prefabs')}</h3>
                             <p className="mt-2 text-lg">{t('Prefabs Text')}</p>
@@ -83,10 +87,17 @@ function HomePage() {
 
                         <div className="service-item bg-white shadow-xl rounded-lg p-8 border border-gray-200">
                             <div className="flex justify-center">
-                                <img src={falsaD} alt="Service 1" className="w-full" />
+                                <img src={casetaJetSKi} alt="Service 1" className="w-full" />
                             </div>
                             <h3 className="text-2xl font-semibold mt-4">{t('Sale')}</h3>
                             <p className="mt-2 text-lg">{t('Sale Text')}</p>
+                        </div>
+                        <div className="service-item bg-white shadow-xl rounded-lg p-8 border border-gray-200">
+                            <div className="flex justify-center">
+                                <img src={edificiModular} alt="Service 1" className="w-full" />
+                            </div>
+                            <h3 className="text-2xl font-semibold mt-4">{t('Modular Building')}</h3>
+                            <p className="mt-2 text-lg">{t('Modular Building Text')}</p>
                         </div>
                     </div>
                 </div>
