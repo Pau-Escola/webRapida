@@ -19,7 +19,7 @@ const resources = {
             "Prefabs Text": "If what you need is a temporary solution that adapts and is available quickly, we will take it wherever it is needed.",
             "Sale": "Sale",
             "Sale Text": "Products ready to be used at lower prices.",
-            "Repairs": "Repairs",
+            "Repairs": "Repairs and Modifications",
             "Repairs Text": "So many years dedicated to the sector allow us to fix or modify anything related to modules.",
             "Rent": "Rent",
             "Rent Text": "If what you need is a temporary solution that adapts and is available quickly, we will take it wherever it is needed.",
@@ -43,7 +43,13 @@ const resources = {
             "Sent Success": "Message correctly sent",
             "Sent Failure": "Unable to send message, contact us through comercial@simreus.com or call us 977 344 711",
             "Modular Building": "Modular Building",
-            "Modular Building Text": "If what you need is to acquire a container or module, we will help you find what you need, and if not, we will make it custom for you."
+            "Modular Building Text": "If what you need is to acquire a container or module, we will help you find what you need, and if not, we will make it custom for you.",
+            "Recycled Goods": "Recycled Containers and Prefabs",
+            "Recycled Goods Text": "",
+            "Trading": "Trading",
+            "Trading Text": "Compravenda",
+            "Cabin": "Modular cabins",
+            "Cabin Text": "Vivenda de camp"
 
         },
     },
@@ -61,7 +67,7 @@ const resources = {
             "Prefabs Text": "Si lo que necesitas es una solución temporal que se adapte y esté disponible en poco tiempo, te lo llevaremos donde sea necesario.",
             "Sale": "Ocasión",
             "Sale Text": "Productos preparados para ser utilizados a precios más bajos.",
-            "Repairs": "Reparaciones",
+            "Repairs": "Reparaciones y Modificaciones",
             "Repairs Text": "Tantos años dedicados al sector nos permiten arreglar o modificar cualquier cosa relacionada con módulos.",
             "Rent": "Alquiler",
             "Rent Text": "Si lo que necesitas es una solución temporal que se adapte y esté disponible en poco tiempo, te lo llevaremos donde sea necesario",
@@ -85,7 +91,13 @@ const resources = {
             "Sent Success": "Mensaje enviado correctamente",
             "Sent Failure": "No se ha podido enviar tu mensaje, escrívenos a comercial@simreus.com o llámanos al 977 344 711",
             "Modular Building": "Construcción Modular",
-            "Modular Building Text": "Tantos años dedicados al sector nos permiten arreglar o modificar cualquier cosa relacionada con módulos."
+            "Modular Building Text": "Tantos años dedicados al sector nos permiten arreglar o modificar cualquier cosa relacionada con módulos.",
+            "Recycled Goods": "Contenedores y Módulos Reciclados",
+            "Recycled Goods Text": "",
+            "Trading": "Compraventa",
+            "Trading Text": "Compravenda",
+            "Cabin": "Vivenda de campo",
+            "Cabin Text": "Vivenda de camp"
 
         },
     },
@@ -102,15 +114,15 @@ const resources = {
             "Prefabs": "Mòduls",
             "Prefabs Text": "Si el que necessites és una solució temporal que s'adapti i estigui disponible en poc temps, t'ho durem on calgui",
             "Sale": "Ocasió",
-            "Sale Text": "Productes preparats per ser utilitzats a preus més baixos",
-            "Repairs": "Reparacions",
+            "Sale Text": "Productes reciclats per ser utilitzats a preus més baixos",
+            "Repairs": "Reparacions i Modificacions",
             "Repairs Text": "Tants anys dedicats al sector ens permeten arreglar o modificar qualssevol cosa relacionada amb mòduls",
             "Rent": "Lloguer",
             "Rent Text": "Si el que necessites és una solució temporal que s'adapti i estigui disponible en poc temps, t'ho durem on calgui",
             "Buy": "Venda",
             "Buy Text": "Si el que necessites és adquirir un contenidor o mòdul t'ajudarem a trobar el que necessites i sino te'l farem a mida",
             "Relocation": "Trasllat",
-            "Relocation Text": "Productes preparats per ser utilitzats a preus més baixos",
+            "Relocation Text": "Productes reciclats per ser utilitzats a preus més baixos",
             "Availability": "Horari d'atenció",
             "Open Times": "Dilluns - Divendres: 8am - 4pm",
             "Closed Times": "Dissabtes i Diumenges: Tancat",
@@ -127,7 +139,13 @@ const resources = {
             "Sent Success": "Missatge enviat correctament",
             "Sent Failure": "No s'ha pogut enviar el teu missatge, escriu-nos a comercial@simreus.com o truca'ns al 977 344 711",
             "Modular Building": "Contrucció Modular",
-            "Modular Building Text": "Si el que necessites és adquirir un contenidor o mòdul t'ajudarem a trobar el que necessites i sino te'l farem a mida"
+            "Modular Building Text": "Col·laborem amb empreses de construcció en l'edificació de vivendes",
+            "Recycled Goods": "Contenidors i Mòduls Reciclats",
+            "Recycled Goods Text": "",
+            "Trading": "Compravenda",
+            "Trading Text": "Compravenda",
+            "Cabin": "Vivenda de camp",
+            "Cabin Text": "Vivenda de camp"
             // Add other keys and translations
         },
     }
