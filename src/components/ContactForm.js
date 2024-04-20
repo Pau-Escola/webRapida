@@ -83,7 +83,7 @@ const ContactForm = () => {
                 ></textarea>
             </div>
             <div>
-                <button type="submit" className="hover:bg-blue-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                <button type="submit" className="bg-primary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                     {t('Send')}
                 </button>
             </div>

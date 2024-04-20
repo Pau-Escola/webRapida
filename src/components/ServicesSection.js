@@ -6,7 +6,7 @@ import buyIcon from '../images/icono-ocasio.png';
 import recycleIcon from '../images/reciclatLogo.png';
 import tradingIcon from '../images/tradingLogo.png';
 import cabinIcon from '../images/cabinLogo.png';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
 
 function ServicesSection() {
     const { t } = useTranslation();
@@ -58,7 +58,7 @@ function ServicesSection() {
                     <h3 className="text-2xl text-center mt-2 font-semibold relative">{t('Recycled Goods')}</h3>
                     <div className="absolute inset-0 bg-primary bg-opacity-95 scale-0 group-hover:scale-100 transition-transform duration-300 ease-in-out flex justify-center items-center opacity-0 group-hover:opacity-100">
 
-                        <p className="text-lg p-4 text-white">{t('Recycled Goods Text')}</p>
+                        <p className="text-lg p-4 text-white"><Trans i18nKey="Recycled Goods Text" /></p>
                     </div>
                 </div><div className="group relative border border-gray-300 shadow-sm rounded-lg overflow-hidden">
 
