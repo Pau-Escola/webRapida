@@ -5,11 +5,11 @@ import { useTranslation } from 'react-i18next';
 const ContactForm = () => {
     const { t } = useTranslation();
     const [contact, setContact] = useState({ from_name: '', reply_to: '', message: '', contact_phone: '' });
+    const [isSubmitting, setIsSubmitting] = useState(false); // State to track submission status
 
     useEffect(() => {
-        emailjs.init("S2wLIPh6B27P5O_sL"); // Initialize EmailJS with your user ID
+        emailjs.init("6iFbLIRqJGiJhlg58"); // Initialize EmailJS with your user ID
     }, []);
-
 
     const handleChange = (e) => {
         setContact({ ...contact, [e.target.name]: e.target.value });
@@ -17,21 +17,24 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setIsSubmitting(true); // Disable the submit button when the form is submitted
 
-        emailjs.send('service_2xr0lqj', 'template_xoxi5rc', contact, 'S2wLIPh6B27P5O_sL')
+        emailjs.send('service_we6kskc', 'template_xoxi5rc', contact, '6iFbLIRqJGiJhlg58')
             .then((result) => {
                 console.log(result.text);
                 alert(t('Sent Success'));
+                setIsSubmitting(false); // Re-enable the submit button after successful submission
             }, (error) => {
                 console.log(error.text);
                 alert(t('Sent Failure'));
+                setIsSubmitting(false); // Re-enable the submit button even if there's an error
             });
     };
 
     return (
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto py-4 px-8 bg-white shadow-md rounded-lg">
             <div className="mb-4">
-                <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">{t('Name')}</label>
+                <label htmlFor="from_name" className="block text-gray-700 text-sm font-bold mb-2">{t('Name')}</label>
                 <input
                     type="text"
                     name="from_name"
@@ -44,7 +47,7 @@ const ContactForm = () => {
                 />
             </div>
             <div className="mb-4">
-                <label htmlFor="phone" className="block text-gray-700 text-sm font-bold mb-2">{t('Phone')}</label>
+                <label htmlFor="contact_phone" className="block text-gray-700 text-sm font-bold mb-2">{t('Phone')}</label>
                 <input
                     type="phone"
                     name="contact_phone"
@@ -57,7 +60,7 @@ const ContactForm = () => {
                 />
             </div>
             <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-700 text-sm font-bold mb-2">{t('Email')}</label>
+                <label htmlFor="reply_to" className="block text-gray-700 text-sm font-bold mb-2">{t('Email')}</label>
                 <input
                     type="email"
                     name="reply_to"
@@ -83,8 +86,8 @@ const ContactForm = () => {
                 ></textarea>
             </div>
             <div>
-                <button type="submit" className="bg-primary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                    {t('Send')}
+                <button type="submit" disabled={isSubmitting} className="bg-primary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    {isSubmitting ? t('Sending') : t('Send')}
                 </button>
             </div>
         </form>
