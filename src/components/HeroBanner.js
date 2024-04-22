@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Carousel from './Carousel'; // Import your Carousel component
 import ContactFormModal from './ContactFormModal';
-import casetaJetSKi from '../images/products/jetSkiCaseta.jpg';
-import cotenidor1 from '../images/products/contenidor.jpg';
-import cotenidor2 from '../images/products/contenidor2.jpg';
-import casetaControl2 from '../images/products/IMG_20200804_081113 - copia.jpg';
-import casetaControl from '../images/products/IMG_20200804_081215.jpg';
+import casetaJetSKi from '../images/herobanner/jetSkiCaseta.jpg';
+import cotenidor1 from '../images/herobanner/contenidor.jpg';
+import cotenidor2 from '../images/herobanner/contenidor2.jpg';
+import casetaControl2 from '../images/herobanner/IMG_20200804_081113 - copia.jpg';
+import casetaControl from '../images/herobanner/IMG_20200804_081215.jpg';
 import { useTranslation, Trans } from 'react-i18next';
 
 function HeroBanner() {

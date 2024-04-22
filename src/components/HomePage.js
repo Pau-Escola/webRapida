@@ -1,9 +1,9 @@
 import React from 'react';
-import edificiModular from '../images/products/edifici-despres.jpg';
-import cotenidorNou from '../images/products/contenidor-1.JPG';
-import modul from '../images/products/modul-2.jpg';
-import casetaOcasio from '../images/products/ocasio-1.JPG';
-import reparacioCantera from '../images/products/reparacio-cantera.jpg';
+import contenidorNou from '../images/homepage/contenidor-1.JPG';
+import modul from '../images/homepage/modul-2.jpg';
+import casetaOcasio from '../images/homepage/ocasio-1.JPG';
+import edificiModular from '../images/homepage/edifici-despres.jpeg';
+import reparacioCantera from '../images/homepage/reparacio-cantera.jpg';
 import HeroBanner from './HeroBanner.js';
 import ServicesSection from './ServicesSection.js';
 import { useTranslation } from 'react-i18next';
@@ -23,7 +23,7 @@ function HomePage() {
 
                         <div className="service-item  shadow-xl rounded-lg p-8 border border-gray-200">
                             <div className="flex justify-center">
-                                <img src={cotenidorNou} alt="Service 1" className="w-full h-80 " />
+                                <img src={contenidorNou} alt="Service 1" className="w-full h-80 " />
                             </div>
                             <h3 className="text-2xl font-semibold mt-4">{t('Container')}</h3>
                             <p className="mt-2 text-lg">{t('Container Text')}</p>

@@ -1,11 +1,11 @@
 import React from 'react';
-import rentIcon from '../images/lloguer-blau.png';
-import relocationIcon from '../images/trasllat-blau.png';
-import repairIcon from '../images/reparacio-blau.png';
-import buyIcon from '../images/venda-blau.png';
-import recycleIcon from '../images/reciclar-blau.png';
-import tradingIcon from '../images/trading-blau.png';
-import cabinIcon from '../images/cabin-blau.png';
+import rentIcon from '../images/servicesicons/lloguer-blau.png';
+import relocationIcon from '../images/servicesicons/trasllat-blau.png';
+import repairIcon from '../images/servicesicons/reparacio-blau.png';
+import buyIcon from '../images/servicesicons/venda-blau.png';
+import recycleIcon from '../images/servicesicons/reciclar-blau.png';
+import tradingIcon from '../images/servicesicons/trading-blau.png';
+import cabinIcon from '../images/servicesicons/cabin-blau.png';
 import { useTranslation, Trans } from 'react-i18next';
 
 function ServicesSection() {

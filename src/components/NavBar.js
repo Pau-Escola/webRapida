@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../images/logo.jpg';
-import catalan from '../images/idiomes/catalan.png';
-import spanish from '../images/idiomes/spanish.png';
-import english from '../images/idiomes/english.png';
+import logo from '../images/navbar/logo.jpg';
+import catalan from '../images/navbar/idiomes/catalan.png';
+import spanish from '../images/navbar/idiomes/spanish.png';
+import english from '../images/navbar/idiomes/english.png';
 import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
