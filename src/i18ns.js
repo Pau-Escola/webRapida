@@ -121,7 +121,7 @@ const resources = {
             "Sale": "Ocasió",
             "Sale Text": "Productes reciclats per ser utilitzats a preus més baixos.",
             "Repairs": "Reparacions i Modificacions",
-            "Repairs Text": "Tants anys dedicats al sector ens permeten arreglar o modificar qualssevol cosa relacionada amb mòduls.",
+            "Repairs Text": "Tants anys dedicats al sector ens permeten arreglar o modificar qualsevol cosa relacionada amb mòduls.",
             "Rent": "Lloguer",
             "Rent Text": "Si el que necessites és una solució temporal que s'adapti i estigui disponible en poc temps, t'ho durem on calgui.",
             "Buy": "Venda",
