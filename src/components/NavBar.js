@@ -4,6 +4,7 @@ import catalan from '../images/navbar/idiomes/catalan.png';
 import spanish from '../images/navbar/idiomes/spanish.png';
 import english from '../images/navbar/idiomes/english.png';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -16,7 +17,9 @@ const NavBar = () => {
     return (
         <nav className="bg-white p-3 shadow-lg flex justify-between items-center">
             <div>
-                <img src={logo} alt="Company Logo" style={{ width: '200px', marginLeft: '10px' }} />
+                <Link to="/">
+                    <img src={logo} alt="Company Logo" style={{ width: '200px', marginLeft: '10px' }} />
+                </Link>
             </div>
             <div className="flex items-center space-x-4">
                 <button onClick={() => changeLanguage('ca')}>
