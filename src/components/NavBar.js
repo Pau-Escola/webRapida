@@ -5,6 +5,7 @@ import spanish from '../images/navbar/idiomes/spanish.png';
 import english from '../images/navbar/idiomes/english.png';
 import { useTranslation } from 'react-i18next';
 
+
 const NavBar = () => {
     const { i18n } = useTranslation();
 

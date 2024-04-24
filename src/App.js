@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import ContactFormModal from './components/ContactFormModal';
@@ -8,7 +8,11 @@ import { useTranslation } from 'react-i18next';
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
 
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
   return (
     <Router>
       <div className="App">
