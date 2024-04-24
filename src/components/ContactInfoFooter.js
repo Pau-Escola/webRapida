@@ -44,8 +44,7 @@ function ContactInfoFooter() {
                     </iframe>
                 </div>
                 <div className="text-center mt-4">
-                <p><Link to="/legal-policies" className="text-blue-500">{t('Data Policies')}</Link>.</p>
-                <p>{t('Rights Reserved', { year: currentYear })}</p>
+                <span className="text-black w-full text-center">{t('Rights Reserved', { year: currentYear })} <Link to="/legal-policies" className="text-blue-500">{t('Data Policies')}</Link>.</span>
             </div>
             </div>
         </div>
