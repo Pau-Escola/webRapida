@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const ContactForm = () => {
     const { t } = useTranslation();
     const [contact, setContact] = useState({ from_name: '', reply_to: '', message: '', contact_phone: '' });
     const [isSubmitting, setIsSubmitting] = useState(false); // State to track submission status
-
+    const [isAgreed, setIsAgreed] = useState(false);
     useEffect(() => {
         emailjs.init("6iFbLIRqJGiJhlg58"); // Initialize EmailJS with your user ID
     }, []);
@@ -15,8 +16,16 @@ const ContactForm = () => {
         setContact({ ...contact, [e.target.name]: e.target.value });
     };
 
+    const handleCheckboxChange = (e) => {
+        setIsAgreed(e.target.checked);
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!isAgreed) {
+            alert(t('Accept Policies Alert'));
+            return;
+        }
         setIsSubmitting(true); // Disable the submit button when the form is submitted
 
         emailjs.send('service_we6kskc', 'template_xoxi5rc', contact, '6iFbLIRqJGiJhlg58')
@@ -84,6 +93,11 @@ const ContactForm = () => {
                     className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     required
                 ></textarea>
+            </div>
+            <div>
+            <label htmlFor="checkbox" />
+                <input type="checkbox" checked={isAgreed} onChange={handleCheckboxChange} />
+                <span className="text-black">{t('I agree')} <Link to="/legal-policies" className="text-blue-500">{t('Data Policies')}</Link>.</span>
             </div>
             <div>
                 <button type="submit" disabled={isSubmitting} className="bg-primary text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">

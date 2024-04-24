@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import ContactFormModal from './ContactFormModal';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 function ContactInfoFooter() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const { t } = useTranslation();
+    const currentYear = new Date().getFullYear();
 
     return (
         <div className="bg-gray-200 text-gray-700 p-4">
@@ -40,6 +43,10 @@ function ContactInfoFooter() {
                         tabIndex="0">
                     </iframe>
                 </div>
+                <div className="text-center mt-4">
+                <p><Link to="/legal-policies" className="text-blue-500">{t('Data Policies')}</Link>.</p>
+                <p>{t('Rights Reserved', { year: currentYear })}</p>
+            </div>
             </div>
         </div>
     );

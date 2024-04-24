@@ -53,8 +53,22 @@ const resources = {
             "Cabin Text": "If you have a field and are looking for a solution to enjoy the weekend with family or friends, we offer you an economical, flexible, and quick option.",
             "Maintenance": "Maintenance",
             "Maintenance Text": "If you have any problem with a prefab or container, we can fix it efficiently and professionally to extend its useful life.",
-            "Cookies": "Legal Notice<br/><br/><strong>Ownership</strong><br/>This website is owned by SOLUCIONS INTEGRALS MODULARS, S.L.U. (hereinafter referred to as SIM) with its registered office at PASSEIG SUNYER Nº11, FLOOR 2 DOOR 2, 43205 Reus, Tarragona, with CIF B43656883. For inquiries or more information you can contact us through the following email address: comercial@simreus.com, or by postal mail to our corporate address, or by phone at 977 34 47 11.<br/><br/><strong>What Personal Data We Collect and Why We Collect It</strong><br/>Contact Forms: SIM offers the possibility to contact it through forms included on the website. The purpose of processing the data received is to manage commercial, legal, or contractual relations that may link the user with SIM.<br/><br/><strong>Cookies</strong><br/>Analytics: The application we use to obtain and analyze navigation information is Google Analytics.<br/><br/><strong>What Rights You Have Over Your Data</strong><br/>If you have an account or have left your data on this web, you can request to receive an export file of the personal data we hold about you.<br/><br/><strong>Security</strong><br/>The website uses generally accepted industry information security techniques to prevent unauthorized access to data."
-        },
+            "legalNoticeTitle": "Legal Notice",
+            "ownershipTitle": "Ownership",
+            "ownershipContent": "This website is owned by SOLUCIONS INTEGRALS MODULARS, S.L.U. (hereinafter SIM) with registered office at PASSEIG SUNYER Nº11, 2nd FLOOR, DOOR 2, 43205 Reus, Tarragona, with tax ID (CIF) B43656883. For inquiries or more information, you can contact us via the following email address: comercial@simreus.com, or by postal mail at our corporate address, or by telephone at 977 34 47 11.",
+            "personalDataTitle": "What personal data we collect and why we collect it",
+            "personalDataContent": "Contact Forms: SIM offers the possibility to contact us through forms included on the website. In compliance with the General Data Protection Regulation (Regulation (EU) 2016/679), we inform you that the data provided will be incorporated into a file for which SIM is responsible. These forms are filled out freely and voluntarily, therefore the data must be truthful and reflect reality. The purpose of processing the data received is to manage commercial, legal, or contractual relations that may link the user with SIM. USERS may receive information concerning the services and activities of SIM via email or other means, for which the USER grants consent, which may be revoked at any time. The user has the right to: access their personal data, request the rectification of inaccurate personal data, request their deletion when, among other reasons, they are no longer necessary for the purposes for which they were collected, request the limitation of their processing, in which case they will only be retained for the exercise or defense of claims, request the portability of their data. Users may revoke the consents granted at any time by addressing SOLUCIONS INTEGRALS MODULARS, S.L.U, either at its headquarters, via the email comercial@simreus.com or by phone at 977344711. SIM guarantees the security and confidentiality of the data provided by each USER, and the data will not be transferred to third parties except in cases where there is a legal obligation.",
+            "cookiesTitle": "Cookies",
+            "cookiesContent": "Analytics: The application we use to obtain and analyze navigation information is Google Analytics (www.google.com/analytics/ and http://www.google.es/intl/es/analytics/privacyoverview.html). This application has been developed by Google, which provides us with the audience analysis service of our page. This company may use these data to improve its own services and to offer services to other companies. You can learn about these other uses from the links provided.",
+            "dataRightsTitle": "What rights you have over your data",
+            "dataRightsContent": "If you have an account or have left your data on this website, you can request to receive an export file of the personal data we have about you, including any data you have provided us. You can also request that we delete or modify any personal data we have about you. This does not include any data that we are obliged to keep for administrative, legal, or security purposes.",
+            "securityTitle": "Security",
+            "securityContent": "The website uses generally accepted industry information security techniques, such as firewalls, access control procedures, and cryptographic mechanisms, all aimed at preventing unauthorized access to data. To achieve these ends, the user/client agrees that the provider obtain data for the effect of the corresponding authentication of access controls. The entire purchasing process carried out on this website is transmitted through a secure communication protocol (HTTPS://) so that no third party has access to the information transmitted electronically.",
+            "Data Policies":"Privacy policy",
+            "I agree" : " I accept the ",
+            "Accept Policies Alert" : "You need to agree the privacy policy before sending the form",
+            "Rights Reserved":"© {{year}} All rigths reserved. Solucions Integrals Modulars S.L.U. "
+            },
     },
     es: {
         translation: {
@@ -104,36 +118,23 @@ const resources = {
             "Cabin Text": "Si tienes un campo y buscas una solución para disfrutar del fin de semana con familia o amigos, te proponemos una opción económica, flexible y rápida.",
             "Maintenance": "Mantenimiento",
             "Maintenance Text": "Si tienes algún problema con un módulo o contenedor, podemos arreglarlo de manera eficiente y profesional para prolongar su vida útil.",
-            "Cookies": `Aviso legal
-            Titularidad
-            Este sitio web es propiedad de SOLUCIONS INTEGRALS MODULARS, S.L.U. (en adelante SIM) con domicilio social en PASSEIG SUNYER Nº11, PISO 2 PUERTA 2, 43205 Reus, Tarragona, con CIF 	B43656883. Para consulta o mas información puedes contactarnos a través de la siguiente dirección de correo electrónico: comercial@simreus.com, o por correo postal a nuestra dirección social, o al teléfono 977 34 47 11.
-            
-            Qué datos personales recogemos y por qué los recogemos
-            Formularios de contacto
-            SIM ofrece la posibilidad de contactar con ella a través de formularios incluidos en la página web. En cumplimiento de lo establecido en el Reglamento General de Protección de datos (Reglamento (UE) 2016/679) , informamos que los datos proporcionados serán incorporados a un fichero cuyo responsable es SIM. Dichos formularios se cumplimentan de manera libre y voluntaria, de manera que los datos habrán de ser ciertos y ajustados a la realidad. La finalidad del tratamiento de los datos recibidos será la de gestionar las relaciones comerciales, jurídicas o contractuales que puedan vincular al usuario con SIM. Es posible que el USUARIO reciba informaciones concernientes a los servicios y actividades de SIM a través del correo electrónico u otros medios, para lo cual el USUARIO otorga su consentimiento, que podrá ser revocado en cualquier momento. El usuario tiene derecho a:
-            
-            acceder a sus datos personales,
-            solicitar la rectificación de los datos personales que sean inexactos
-            solicitar su supresión cuando, entre otros motivos, ya no sean necesarios para los fines que fueron recogidos,
-            solicitar la limitación de su tratamiento, en cuyo caso únicamente se conservarán para el ejercicio o la defensa de reclamaciones,
-            pedir la portabilidad de sus datos.
-            El usuario podrá revocar los consentimientos prestados en cualquier momento dirigiéndose a SOLUCIONS INTEGRALS MODULARS, S.L.U, bien en sus oficinas centrales, en el correo electrónico comercial@simreus.com o en el teléfono 977344711
-            
-            SIM garantiza la seguridad y confidencialidad de los datos facilitados por cada USUARIO, y los datos no se cederán a terceros salvo en los casos en que exista una obligación legal.
-            
-            Cookies
-           
-            Analítica
-            La aplicación que utilizamos para obtener y analizar la información de la navegación es: Google Analytics, www.google.com/analytics/ y http://www.google.es/intl/es/analytics/privacyoverview.html
-            Esta aplicación ha sido desarrollada por Google, que nos presta el servicio de análisis de la audiencia de nuestra página. Esta empresa puede utilizar estos datos para mejorar sus propios servicios y para ofrecer servicios a otras empresas. Puedes conocer esos otros usos desde los enlaces indicados.
-            
-            Qué derechos tienes sobre tus datos
-            Si tienes una cuenta o has dejado tus datos en esta web, puedes solicitar recibir un archivo de exportación de los datos personales que tenemos sobre ti, incluyendo cualquier dato que nos hayas proporcionado. También puedes solicitar que eliminemos o modifiquemos cualquier dato personal que tengamos sobre ti. Esto no incluye ningún dato que estemos obligados a conservar con fines administrativos, legales o de seguridad.
-            
-            Seguridad
-            El sitio web utiliza técnicas de seguridad de la información generalmente aceptada en la industria, tales como firewalls, procedimientos de control de acceso y mecanismos criptográficos, todo ello con el objeto de evitar el acceso no autorizado de datos. Para lograr estos fines, el usuario/cliente acepta que el prestador obtenga datos para efecto de la correspondiente autenticación de los controles de acceso. Todo el proceso de compra realizado en este sitio web se transmite a través de un protocolo de comunicación seguro (HTTPS://) de forma que ningún tercero tiene acceso a la información transmitida electrónicamente.`
-
-        },
+            "legalNoticeTitle": "Aviso Legal",
+            "ownershipTitle": "Titularidad",
+            "ownershipContent": "Este sitio web es propiedad de SOLUCIONS INTEGRALS MODULARS, S.L.U. (de ahora en adelante SIM) con domicilio social en PASSEIG SUNYER Nº11, PISO 2 PUERTA 2, 43205 Reus, Tarragona, con CIF B43656883. Para consultas o más información puedes contactarnos a través de la siguiente dirección de correo electrónico: comercial@simreus.com, o por correo postal a nuestra dirección social, o al teléfono 977 34 47 11.",
+            "personalDataTitle": "Qué datos personales recogemos y por qué los recogemos",
+            "personalDataContent": "Formularios de contacto: SIM ofrece la posibilidad de contactar con ella a través de formularios incluidos en la página web. En cumplimiento con el Reglamento General de Protección de Datos (Reglamento (UE) 2016/679), informamos que los datos proporcionados serán incorporados a un archivo cuyo responsable es SIM. Estos formularios se rellenan de manera libre y voluntaria, por lo que los datos deben ser verdaderos y reflejar la realidad. El propósito del tratamiento de los datos recibidos es gestionar las relaciones comerciales, legales o contractuales que puedan vincular al usuario con SIM. El USUARIO puede recibir información concerniente a los servicios y actividades de SIM a través del correo electrónico u otros medios, para lo cual el USUARIO otorga su consentimiento, que puede ser revocado en cualquier momento. El usuario tiene derecho a: acceder a sus datos personales, solicitar la rectificación de los datos personales que sean inexactos, solicitar su eliminación cuando, entre otros motivos, ya no sean necesarios para los fines que fueron recogidos, solicitar la limitación de su tratamiento, en cuyo caso únicamente se conservarán para el ejercicio o la defensa de reclamaciones, solicitar la portabilidad de sus datos. El usuario puede revocar los consentimientos otorgados en cualquier momento dirigiéndose a SOLUCIONS INTEGRALS MODULARS, S.L.U, bien en sus oficinas centrales, mediante el correo electrónico comercial@simreus.com o por teléfono al 977344711. SIM garantiza la seguridad y confidencialidad de los datos facilitados por cada USUARIO, y los datos no se cederán a terceros salvo en los casos en que exista una obligación legal.",
+            "cookiesTitle": "Cookies",
+            "cookiesContent": "Analítica: La aplicación que utilizamos para obtener y analizar la información de la navegación es Google Analytics (www.google.com/analytics/ y http://www.google.es/intl/es/analytics/privacyoverview.html). Esta aplicación ha sido desarrollada por Google, que nos presta el servicio de análisis de la audiencia de nuestra página. Esta empresa puede utilizar estos datos para mejorar sus propios servicios y para ofrecer servicios a otras empresas. Puedes conocer esos otros usos desde los enlaces indicados.",
+            "dataRightsTitle": "Qué derechos tienes sobre tus datos",
+            "dataRightsContent": "Si tienes una cuenta o has dejado tus datos en esta web, puedes solicitar recibir un archivo de exportación de los datos personales que tenemos sobre ti, incluyendo cualquier dato que nos hayas proporcionado. También puedes solicitar que eliminemos cualquier dato personal que tengamos sobre ti. Esto no incluye ningún dato que estemos obligados a conservar con fines administrativos, legales o de seguridad.",
+            "securityTitle": "Seguridad",
+            "securityContent": "El sitio web utiliza técnicas de seguridad de la información generalmente aceptadas en la industria, tales como firewalls, procedimientos de control de acceso y mecanismos criptográficos, todo ello con el objeto de evitar el acceso no autorizado de datos. Para lograr estos fines, el usuario/cliente acepta que el proveedor obtenga datos para efecto de la correspondiente autenticación de los controles de acceso. Todo el proceso de compra realizado en este sitio web se transmite a través de un protocolo de comunicación seguro (HTTPS://) de forma que ningún tercero tiene acceso a la información transmitida electrónicamente.",
+            "Data Policies":"Política de privacidad",
+            "I agree" : " Acepto ",
+            "Accept Policies Alert" : "Tienes que aceptar nuestra política de privacidad antes the poder enviar el mensaje",
+            "Rights Reserved":"© {{year}} Todos los derechos reservados. Solucions Integrals Modulars S.L.U. "
+            },
+        
     },
     ca: {
         translation: {
@@ -183,34 +184,23 @@ const resources = {
             "Cabin Text": "Si tens un camp i busques una solució per disfrutar del cap de setmana amb familia o amics, et proposem una opció econòmica, flexible i ràpida.",
             "Maintenance": "Manteniment",
             "Maintenance Text": "Si te cap problema amb un mòdul o contenidor li podem arreglar de manera eficient i professional per allargar-ne la vida útil.",
-            "Cookies": `Avís Legal
-            Titularitat
-            Aquest lloc web és propietat de SOLUCIONS INTEGRALS MODULARS, S.L.U. (d'ara endavant SIM) amb domicili social al PASSEIG SUNYER Nº11, PIS 2 PORTA 2, 43205 Reus, Tarragona, amb CIF B43656883. Per a consultes o més informació pots contactar-nos a través de la següent adreça de correu electrònic: comercial@simreus.com, o per correu postal a la nostra adreça social, o al telèfon 977 34 47 11.
-            
-            Quines dades personals recollim i per què les recollim
-            Formularis de contacte
-            SIM ofereix la possibilitat de contactar amb ella a través de formularis inclosos a la pàgina web. En compliment del que estableix el Reglament General de Protecció de dades (Reglament (UE) 2016/679), informem que les dades proporcionades seran incorporades a un fitxer del qual és responsable SIM. Aquests formularis s'omplen de manera lliure i voluntària, de manera que les dades hauran de ser certes i ajustades a la realitat. La finalitat del tractament de les dades rebudes serà la de gestionar les relacions comercials, jurídiques o contractuals que puguin vincular a l'usuari amb SIM. És possible que l'USUARI rebi informacions relatives als serveis i activitats de SIM a través del correu electrònic o altres mitjans, per al qual l'USUARI atorga el seu consentiment, que podrà ser revocat en qualsevol moment. L'usuari té dret a:
-            
-            accedir a les seves dades personals,
-            sol·licitar la rectificació de les dades personals que siguin inexactes
-            sol·licitar la seva supressió quan, entre altres motius, ja no siguin necessàries per als fins que van ser recollides,
-            sol·licitar la limitació del seu tractament, en el qual cas únicament es conservaran per a l'exercici o la defensa de reclamacions,
-            demanar la portabilitat de les seves dades.
-            L'usuari podrà revocar els consentiments prestats en qualsevol moment dirigint-se a SOLUCIONS INTEGRALS MODULARS, S.L.U, bé a les seves oficines centrals, en el correu electrònic comercial@simreus.com o en el telèfon 977344711
-            SIM garanteix la seguretat i confidencialitat de les dades facilitades per cada USUARI, i les dades no es cediran a tercers excepte en els casos en què existeixi una obligació legal.
-            
-            Cookies
-            
-            Analítica
-            L'aplicació que utilitzem per obtenir i analitzar la informació de la navegació és: Google Analytics, www.google.com/analytics/ i http://www.google.es/intl/es/analytics/privacyoverview.html
-            Aquesta aplicació ha estat desenvolupada per Google, que ens presta el servei d'anàlisi de l'audiència de la nostra pàgina. Aquesta empresa pot utilitzar aquestes dades per millorar els seus propis serveis i per oferir serveis a altres empreses. Pots conèixer aquests altres usos des dels enllaços indicats.
-            
-            Quins drets tens sobre les teves dades
-            Si tens un compte o has deixat les teves dades en aquesta web, pots sol·licitar rebre un arxiu d'exportació de les dades personals que tenim sobre tu, incloent qualsevol dada que ens hagis proporcionat. També pots sol·licitar que eliminem o modifiquem qualsevol dada personal que tinguem sobre tu. Això no inclou cap dada que estiguem obligats a conservar amb fins administratius, legals o de seguretat.
-            
-            Seguretat
-            El lloc web utilitza tècniques de seguretat de la informació generalment acceptades en la indústria, tals com firewalls, procediments de control d'accés i mecanismes criptogràfics, tot això amb l'objectiu d'evitar l'accés no autoritzat de dades. Per aconseguir aquests fins, l'usuari/client accepta que el proveïdor obtingui dades per efecte de la corresponent autenticació dels controls d'accés. Tot el procés de compra realitzat en aquest lloc web es transmet a través d'un protocol de comunicació segur (HTTPS://) de manera que cap tercer té accés a la informació transmesa electrònicament.`
-            // Add other keys and translations
+            "legalNoticeTitle": "Avís Legal",
+            "ownershipTitle": "Titularitat",
+            "ownershipContent": "Aquest lloc web és propietat de SOLUCIONS INTEGRALS MODULARS, S.L.U. (d'ara endavant SIM) amb domicili social al PASSEIG SUNYER Nº11, PIS 2 PORTA 2, 43205 Reus, Tarragona, amb CIF B43656883. Per a consultes o més informació podeu contactar-nos a través de l'adreça de correu electrònic comercial@simreus.com, o per correu postal a la nostra adreça social, o al telèfon 977 34 47 11.",
+            "personalDataTitle": "Quines dades personals recollim i per què les recollim",
+            "personalDatacontent": "Formularis de contacte: SIM ofereix la possibilitat de contactar amb ella a través de formularis inclosos a la pàgina web. En compliment amb el Reglament General de Protecció de Dades (Reglament (UE) 2016/679), informem que les dades proporcionades seran incorporades a un fitxer del qual SIM és responsable. Aquests formularis es completen de manera lliure i voluntària, per la qual cosa les dades han de ser verídiques i reflectir la realitat. La finalitat del tractament de les dades rebudes és gestionar les relacions comercials, legals o contractuales que poden vincular a l'usuari amb SIM. L'USUARI pot rebre informació concernent els serveis i activitats de SIM a través del correu electrònic o altres mitjans, per al qual l'USUARI atorga el seu consentiment, que pot ser revocat en qualsevol moment. L'usuari té dret a: accedir a les seves dades personals, sol·licitar la rectificació dels dades personals que siguin inexactes, sol·licitar la seva eliminació quan, entre altres motius, ja no siguin necessaris per als fins que van ser recollides, sol·licitar la limitació del seu tractament, en aquest cas únicament es conservaran per a l'exercici o la defensa de reclamacions, sol·licitar la portabilitat de les seves dades. L'usuari pot revocar els consentiments atorgats en qualsevol moment dirigint-se a SOLUCIONS INTEGRALS MODULARS, S.L.U, bé a les seves oficines centrals, a través del correu electrònic comercial@simreus.com o per telèfon al 977344711. SIM garanteix la seguretat i confidencialitat de les dades facilitades per cada USUARI, i les dades no seran cedides a tercers excepte en els casos en què existeixi una obligació legal.",
+            "cookiesTitle": "Cookies",
+            "cookiesContent": "Analítica: L'aplicació que utilitzem per obtenir i analitzar la informació de la navegació és Google Analytics (www.google.com/analytics/ i http://www.google.es/intl/es/analytics/privacyoverview.html). Aquesta aplicació ha estat desenvolupada per Google, que ens presta el servei d'anàlisi de l'audiència de la nostra pàgina. Aquesta empresa pot utilitzar aquestes dades per millorar els seus propis serveis i per oferir serveis a altres empreses. Podeu conèixer aquests altres usos des dels enllaços indicats.",
+            "dataRightsTitle": "Quins drets tens sobre les teves dades",
+            "dataRightsContent": "Si tens un compte o has deixat les teves dades en aquesta web, pots sol·licitar rebre un fitxer d'exportació de les dades personals que tenim sobre tu, incloent qualsevol dada que ens hagis proporcionat. També pots sol·licitar que eliminem qualsevol dada personal que tinguem sobre tu. Això no inclou cap dada que estiguem obligats a conservar per motius administratius, legals o de seguretat.",
+            "securityTitle": "Seguretat",
+            "securityContent": "El lloc web utilitza tècniques de seguretat de la informació generalment acceptades en la indústria, com ara firewalls, procediments de control d'accés i mecanismes criptogràfics, tot això amb l'objectiu d'evitar l'accés no autoritzat a les dades. Per aconseguir aquests fins, l'usuari/client accepta que el proveïdor obtingui dades per efecte de la corresponent autenticació dels controls d'accés. Tot el procés de compra realitzat en aquest lloc web es transmet a través d'un protocol de comunicació segur (HTTPS://) de manera que cap tercer té accés a la informació transmesa electrònicament.",
+            "Data Policies":"Política de privacitat",
+            "I agree" : " Accepto la ",
+            "Accept Policies Alert" : "Has d'acceptar la nostra política de privacitat per enviar-nos el missatge",
+            "Rights Reserved":"© {{year}} Tots els drets reservats. Solucions Integrals Modulars S.L.U. "
+   
+               // Add other keys and translations
         },
     }
 };
